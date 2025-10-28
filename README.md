@@ -23,7 +23,7 @@ O frontend foi desenvolvido utilizando **Tailwind CSS** para um design moderno e
 * **Backend:** PHP 8.3+ / Laravel 12
 * **Frontend:** Tailwind CSS (via CDN)
 * **Autenticação:** Laravel Breeze (adaptado para o design do projeto)
-* **Banco de Dados:** MySQL
+* **Banco de Dados:** MySQL e Apache.
 
 ---
 
@@ -34,7 +34,7 @@ Siga os passos abaixo para configurar e rodar a aplicação em seu ambiente loca
 ### Pré-requisitos
 * PHP 8.3+
 * Composer
-* Um banco de dados MySQL (Eu utilizei mysql, mas talvez sqllite fosse interessante também)
+* Um banco de dados MySQL (Eu utilizei mysql, mas talvez sqlite fosse interessante também)
 
 ### Instalação
 
@@ -67,7 +67,7 @@ Siga os passos abaixo para configurar e rodar a aplicação em seu ambiente loca
         DB_USERNAME=root
         DB_PASSWORD=(não coloquei senha)
         ```
-        Fiz exatamente dessa forma, necessário o apache caso for usar o Mysql
+        Fiz exatamente dessa forma, necessário o apache caso for usar o Mysql.
 
 ### Comandos Artisan
 
