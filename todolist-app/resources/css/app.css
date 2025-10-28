@@ -1,0 +1,217 @@
+/* --- Configurações Globais e Fundo --- */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f3e8ff, #f9fafb);
+    color: #333;
+}
+
+.container {
+    max-width: 576px; /* Similar ao max-w-lg do Tailwind */
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+/* --- Cabeçalho e Logo --- */
+.logo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.logo-header svg {
+    width: 32px;
+    height: 32px;
+    color: #8b5cf6; /* Roxo */
+}
+
+.logo-header h1 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+}
+
+.logo-header .logo-todo {
+    color: #14b8a6; /* Teal */
+}
+
+.logo-header .logo-do {
+    color: #8b5cf6; /* Roxo */
+}
+
+/* --- Container Principal --- */
+.todo-container {
+    background-color: #ffffff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* --- Formulário --- */
+.add-task-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+#new-task-input {
+    flex-grow: 1; /* Faz o input ocupar o espaço restante */
+    padding: 12px;
+    border: 1px solid #d1d5db; /* Cinza */
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#new-task-input:focus {
+    outline: none;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 2px #c4b5fd;
+}
+
+.add-task-button {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-task-button:hover {
+    background-color: #7c3aed;
+}
+
+.add-task-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* --- Estatísticas --- */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-label {
+    font-weight: 700;
+    color: #374151; /* Cinza escuro */
+}
+
+.stat-badge {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 9999px; /* Arredondado */
+}
+
+.stat-badge.purple {
+    background-color: #ede9fe;
+    color: #7c3aed;
+}
+
+.stat-badge.gray {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+/* --- Lista de Tarefas --- */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espaço entre os itens */
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #f9fafb; /* Cinza bem claro */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.task-checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    flex-shrink: 0; /* Impede que o botão encolha */
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Checkbox Pendente */
+.task-checkbox.pending {
+    border-color: #a78bfa;
+    background-color: transparent;
+}
+
+.task-checkbox.pending:hover {
+    background-color: #f5f3ff;
+}
+
+/* Checkbox Concluído */
+.task-checkbox.done {
+    border-color: #22c55e;
+    background-color: #22c55e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-checkbox.done svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Texto da Tarefa */
+.task-text {
+    flex-grow: 1; /* Ocupa o espaço restante */
+    color: #374151;
+}
+
+.task-text.strikethrough {
+    color: #9ca3af; /* Cinza */
+    text-decoration: line-through;
+}
+
+/* Botão de Deletar */
+.delete-button {
+    background: none;
+    border: none;
+    color: #9ca3af; /* Cinza */
+    cursor: pointer;
+    padding: 4px;
+}
+
+.delete-button:hover {
+    color: #ef4444; /* Vermelho */
+}
+
+.delete-button svg {
+    width: 20px;
+    height: 20px;
+}
