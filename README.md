@@ -105,9 +105,9 @@ Siga os passos abaixo para configurar e rodar a aplicação em seu ambiente loca
 ---
 
 ## 💡 Melhorias Futuras
-* [**Gosto muito de aprimorar o frontend das aplicações, então faria possíveis melhorias nisso**]
-* [**Tarefas por Usuário** - Atualmente, todo usuário que se cadastra vê todas as tarefas do banco de dados. Esta funcionalidade faria com que cada usuário visse apenas as tarefas que ele mesmo criou..]
-* [**Prazos e Datas de Vencimento** - Permitir que cada tarefa tenha uma "data de entrega" ou "prazo".]
-* [**Prioridades (Baixa, Média, Alta)** - Permitir que o usuário defina um nível de prioridade para cada tarefa..]
-* [**Ordenação da Lista** - Permitir que o usuário clique nos cabeçalhos da tabela (ex: "Nome", "Status", "Prazo") para reordenar a lista.]
-* [**Categorias ou "Projetos"** - Uma funcionalidade mais avançada. Permitiria ao usuário agrupar tarefas em diferentes "Projetos" ou "Categorias" (ex: "Trabalho", "Estudo", "Pessoal").]
+* **Gosto muito de aprimorar o frontend das aplicações, então faria possíveis melhorias nisso**
+* **Tarefas por Usuário** - Atualmente, todo usuário que se cadastra vê todas as tarefas do banco de dados. Esta funcionalidade faria com que cada usuário visse apenas as tarefas que ele mesmo criou..
+* **Prazos e Datas de Vencimento** - Permitir que cada tarefa tenha uma "data de entrega" ou "prazo".
+* **Prioridades (Baixa, Média, Alta)** - Permitir que o usuário defina um nível de prioridade para cada tarefa..
+* **Ordenação da Lista** - Permitir que o usuário clique nos cabeçalhos da tabela (ex: "Nome", "Status", "Prazo") para reordenar a lista.
+* **Categorias ou "Projetos"** - Uma funcionalidade mais avançada. Permitiria ao usuário agrupar tarefas em diferentes "Projetos" ou "Categorias" (ex: "Trabalho", "Estudo", "Pessoal").
