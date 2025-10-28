@@ -27,7 +27,7 @@ class TarefasController extends Controller
 
     public function store(Request $request){
      $dadosValidados = $request->validate([
-       'nome' => 'required|string|max:300',
+       'nome' => 'required|string|max:255',
        'descricao' => 'nullable|string|max:255',
        'status' => 'required|string|max:20',
 
